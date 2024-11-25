@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos inline,block, inline-block</title>
+    
+    <style type="text/css">
+
+        .borda{
+            border: 1px solid red;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        Só pula para outra linha quando
+        preenche todo o espaço no caso do "inline - block"
+    -->
+    <span class="borda">inline 1
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Exercitationem, ipsa?
+         Qui, quae ducimus reiciendis commodi
+          laboriosam voluptatum perspiciatis
+           consequatur. Quas, at molestiae.
+            Pariatur consectetur quo vitae. 
+            Molestiae non officia inventore.
+    </span>
+    <span class="borda">inline 2</span>
+    
+    <!-- 
+        <div class="borda">Bloco 1</div>
+        <div class="borda">bloco 2</div> 
+    -->
+
+</body>
+</html>

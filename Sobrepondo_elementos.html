@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobrepondo Elementos</title>
+
+        <style type="text/css">
+            /*Definindo ordem de elementos com z-index*/
+            .conteudo1 {
+                border: 2px dotted rgb(0, 0, 0);
+                background: rgb(255, 0, 0);
+                color: white;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                /*Define a ordem de quem vem 
+                primeiro, o numero maior 
+                define quem vem primeiro. */
+                z-index: 1;
+                
+            }
+
+            .conteudo2 {
+                border: 2px dotted rgb(0, 0, 0);
+                background: rgb(0, 255, 34);
+                color: white;
+                width: 200px;
+                height: 200px;
+                /*position absolute fica um em cima do outro*/
+                position: absolute;
+                top: 80px;
+                left: 80px;
+                z-index: 0;
+            }
+
+            .conteudo3 {
+                border: 2px dotted rgb(0, 0, 0);
+                background: rgb(251, 255, 0);
+                color: white;
+                width: 200px;
+                height: 200px;
+                /*position absolute fica um em cima do outro*/
+                position: absolute;
+                top: 160px;
+                left: 160px;
+                z-index: -3;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="conteudo1">
+            Conteudo 1
+        </div>
+
+        <div class="conteudo2">
+            Conteudo 2
+        </div>
+
+        <div class="conteudo3">
+            Conteudo 3
+        </div>
+
+
+        
+
+        
+
+    </body>
+</html>
